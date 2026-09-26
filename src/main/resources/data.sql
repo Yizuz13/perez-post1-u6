@@ -1,0 +1,11 @@
+MERGE INTO inventario (producto_id, stock) KEY (producto_id) VALUES (1, 100);
+MERGE INTO inventario (producto_id, stock) KEY (producto_id) VALUES (2, 1);
+MERGE INTO inventario (producto_id, stock) KEY (producto_id) VALUES (3, 50);
+MERGE INTO inventario (producto_id, stock) KEY (producto_id) VALUES (4, 100);
+MERGE INTO clientes (id, tipo_cliente, nit) KEY (id) VALUES (1, 'VIP', NULL);
+MERGE INTO clientes (id, tipo_cliente, nit) KEY (id) VALUES (2, 'FRECUENTE', NULL);
+MERGE INTO clientes (id, tipo_cliente, nit) KEY (id) VALUES (3, 'ESTANDAR', NULL);
+MERGE INTO clientes (id, tipo_cliente, nit) KEY (id) VALUES (4, 'MOROSO', NULL);
+MERGE INTO clientes (id, tipo_cliente, nit) KEY (id) VALUES (5, 'CORPORATIVO', '900123456-7');
+MERGE INTO facturas (id, cliente_id, monto, pagada) KEY (id) VALUES (1, 4, 500000.00, FALSE);
+MERGE INTO facturas (id, cliente_id, monto, pagada) KEY (id) VALUES (2, 1, 150000.00, TRUE);
